@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minhas Receitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="nav-placeholder"></div>
+
+    <div class="container mt-5" id="area-receita">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                
+                <h2 id="rec-titulo" class="section-title text-center mb-4">Carregando...</h2>
+                
+                <img id="rec-imagem" src="" class="img-fluid rounded shadow-sm w-100 mb-4" style="height: 400px; object-fit: cover;">
+
+                <div class="d-flex justify-content-around p-3 mb-5 bg-white rounded shadow-sm info-receita">
+                    <div class="text-center">
+                        <span class="d-block fs-4">⏱️</span>
+                        <strong>Tempo:</strong><br><span id="rec-tempo"></span>
+                    </div>
+                    <div class="text-center border-start ps-4">
+                        <span class="d-block fs-4">🍰</span>
+                        <strong>Rendimento:</strong><br><span id="rec-rendimento"></span>
+                    </div>
+                    <div class="text-center border-start ps-4">
+                        <span class="d-block fs-4">🔥</span>
+                        <strong>Dificuldade:</strong><br><span id="rec-dificuldade"></span>
+                    </div>
+                </div>
+
+                <h4 class="section-title mb-3">Ingredientes</h4>
+                <ul id="rec-ingredientes" class="list-group list-group-flush mb-5 shadow-sm rounded"></ul>
+
+                <h4 class="section-title mb-3">Modo de Fazer</h4>
+                <ol id="rec-preparo" class="list-group list-group-numbered mb-5 shadow-sm rounded"></ol>
+
+                <div id="rec-video-container" class="mb-5 d-none">
+                    <h4 class="section-title mb-3">Vídeo da Receita</h4>
+                    <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+                        <iframe id="rec-video" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <div class="caixa-dica p-4 mb-5 shadow-sm">
+                    <p id="rec-dica" class="mb-0"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/components.js"></script>
+    
+    <script src="js/receitas.js"></script>
+    <script src="js/carregar-receita.js"></script>
+</body>
+</html>
