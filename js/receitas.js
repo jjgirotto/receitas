@@ -33,23 +33,106 @@ const bancoDeReceitas = {
             "Asse em forno pré-aquecido a 180ºC por cerca de 40 minutos até dourar."
         ]
     },
-    "suco-natural": {
-        titulo: "Suco Natural Refrescante",
-        imagem: "https://images.unsplash.com/photo-1551024601-bec78aea704b",
-        tempo: "5 minutos",
-        rendimento: "2 copos",
+    "bolo-limao": {
+        titulo: "Bolo de limão",
+        imagem: "images/bolo-limao.PNG",
+        tempo: "15 minutos",
+        rendimento: "Forma circular pequena",
         dificuldade: "Muito Fácil",
-        dica: "Coloque umas folhinhas de hortelã para dar um frescor a mais.",
+        dica: "Para a calda, use 50ml de suco de limão, 50ml de água e 1/4 de xícara de açúcar.",
         ingredientes: [
-            "2 laranjas espremidas",
-            "1 fatia de abacaxi",
-            "Pedras de gelo",
-            "Açúcar ou adoçante a gosto"
+            "2 ovos",
+            "raspinhas de 1 limão",
+            "3/4 xícara de açúcar",
+            "1/4 xícara de óleo",
+            "80g de iogurte natural (ou 1/4 xícara de leite)",
+            "40ml de suco de limão",
+            "1 xícara de farinha de trigo peneirada",
+            "1 colher de sopa de fermento"
         ],
         preparo: [
-            "Coloque o suco de laranja, o abacaxi e o gelo no liquidificador.",
-            "Bata tudo por 2 minutos.",
-            "Adoce se achar necessário e sirva gelado."
+            "Bata os ovos com o açúcar.",
+            "Misture as raspas de limão, o óleo e o leite.",
+            "Adicione o suco de limão",
+            "Bata na menor velocidade ou na mão a farinha",
+            "Adicione o fermento e mexa com a mão",
+            "Asse por 40 minutos a 180ºC."
+        ]
+    },
+    "brownie": {
+        titulo: "Brownie",
+        imagem: "images/brownie.PNG",
+        tempo: "25 minutos",
+        rendimento: "Forma retangular pequena",
+        dificuldade: "Fácil",
+        dica: "Se quiser, adicione 50g de nozes picada na massa. Teste duas barras de chocolate ao leite se desejar mais doce, e duas de chocolate amargo se desejar menos doce.",
+        ingredientes: [
+            "4 ovos",
+            "1 xícara de açúcar",
+            "4 colheres de manteiga derretida",
+            "1 xícara de farinha de trigo peneirada",
+            "1 xícara de chocolate em pó 50%",
+            "90g de chocolate ao leite",
+            "90g de chocolate amargo 40%"
+        ],
+        preparo: [
+            "Bata os ovos com a manteiga derretida.",
+            "Misture o açúcar, chocolate e farinha",
+            "Adicione o chocolate derretido",
+            "Asse por 35 minutos a 180ºC."
+        ]
+    },
+    "crumble": {
+        titulo: "Crumble de maçã",
+        imagem: "images/crumble.PNG",
+        tempo: "25 minutos",
+        rendimento: "Forma circular/retangular pequena",
+        dificuldade: "Muito Fácil",
+        dica: "Pode ser servido quente, morno ou frio com sorvete de creme e polvilhado com canela.",
+        ingredientes: [
+            "4 maçãs verdes aproximadamente 800 g",
+            "1 colher de sopa de caldo de limão taiti ou siciliano",
+            "2 colheres de sopa de açúcar para a maçã",
+            "120 gramas de açúcar para o crumble",
+            "1 colher de sopa de açúcar para polvilhar antes de assar",
+            "180 g de farinha de trigo",
+            "1 colher de chá de sal",
+            "130 g de manteiga bem fria",
+            "Canela em pó a gosto"
+        ],
+        preparo: [
+            "Lave e seque a maçã e retire o miolo. Corte em lâminas finas e regue com o caldo de limão.",
+            "Adicione 2 colheres de sopa de açúcar e reserve.",
+            "Junte a farinha de trigo, o sal, 120 g de açúcar e a manteiga e misture com a ponta dos dedos.",
+            "Faça uma cama de lâminas de maçã em uma travessa levemente untada com manteiga.",
+            "Em seguida, espalhe a farofa por cima e polvilhe mais 1 colher de açúcar",
+            "Asse por 45 a 60 minutos."
+        ]
+    },
+    "creme-confeiteiro": {
+        titulo: "Creme de confeiteiro",
+        imagem: "images/creme-confeiteiro.PNG",
+        tempo: "30 minutos",
+        rendimento: "Uma tigela média",
+        dificuldade: "Fácil",
+        dica: "Pode ferver o leite com pele de limão siciliano. Pode usar farinha no lugar do amido. Espere esfriar e acrescente um pouco de licor de laranja para perfumar.",
+        ingredientes: [
+            "500 ml de leite integral",
+            "100 gramas de açúcar refinado",
+            "5 gemas",
+            "1 colher de chá de essência de baunilha",
+            "30 gramas de amido de milho"
+        ],
+        preparo: [
+            "Em uma panela, aqueça o leite com metade da quantidade total de açúcar.",
+            "Separe as gemas das claras e coloque as gemas em uma tigela grande.",
+            "Acrescente o restante do açúcar às gemas, misture com o fouet, adicione a essência de baunilha, o amido de milho e continue mexendo até incorporar.",
+            "Quando o leite começar a ferver, desligue.",
+            "Adicione o leite quente à mistura de ovos aos poucos, sempre misturando com o fouet até incorporar.",
+            "Volte o creme de ovos e leite para a panela em fogo médio para baixo e cozinhe, misturando sempre com uma colher de pau, até começar a espessar.",
+            "Troque a colher de pau pelo fouet e continue mexendo.",
+            "Quando o creme começar a ferver, cozinhe por mais 2 minutos aproximadamente, desligue o fogo e transfira tudo para uma tigela.",
+            "Passe um cubo de manteiga sobre a superfície do creme para evitar que se forme uma película ao esfriar."
         ]
     }
 };
