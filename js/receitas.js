@@ -48,7 +48,7 @@ const bancoDeReceitas = {
             "80g de iogurte natural (ou 1/4 xícara de leite)",
             "40ml de suco de limão",
             "1 xícara de farinha de trigo peneirada",
-            "1 colher de sopa de fermento"
+            "1/2 colher de sopa de fermento"
         ],
         preparo: [
             "Bata os ovos com o açúcar.",
@@ -133,6 +133,130 @@ const bancoDeReceitas = {
             "Troque a colher de pau pelo fouet e continue mexendo.",
             "Quando o creme começar a ferver, cozinhe por mais 2 minutos aproximadamente, desligue o fogo e transfira tudo para uma tigela.",
             "Passe um cubo de manteiga sobre a superfície do creme para evitar que se forme uma película ao esfriar."
+        ]
+    },
+    "esfiha": {
+        titulo: "Esfiha árabe",
+        imagem: "images/esfiha.PNG",
+        tempo: "2 horas",
+        rendimento: "24 unidades",
+        dificuldade: "Médio",
+        dica: "Para recheio de queijo: 100g de queijo minas frescal, 250g de ricota fresca, 60g de queijo mussarela (opcional), 1 colher de sopa de creme de leite, 1 ovo, Hortelã, salsinha e sal a gosto",
+        ingredientes: [
+            "1kg de farinha de trigo",
+            "500ml de água morna",
+            "1 colher de chá cheia (18g) de fermento biológico seco",
+            "25g de açúcar",
+            "1/4 de colher de chá de sal",
+            "100g de manteiga"
+        ],
+        preparo: [
+            "Coloque a água morna em uma tigela grande com metade da farinha e toda quantidade do fermento e do açúcar. Misture tudo com um fouet vigorosamente até criar uma massa elástica.",
+            "Acrescente a manteiga em temperatura ambiente e o sal. Misture até dar o ponto de massa de panqueca, mais líquida.",
+            "Acrescente o restante da farinha aos poucos, misturando com uma colher de pau. Passe a massa para uma bancada polvilhada com farinha e sove com as mãos até obter uma massa lisa, que ao pressionar o dedo não gruda.",
+            "Cubra a massa com um pano e deixe crescer por no mínimo 20 minutos.",
+            "Para abrir a massa misture fubá com farinha de trigo e polvilhe a bancada.",
+            "Abra a massa por igual, com 4mm de espessura para a esfiha de carne e um pouco mais fina para a de queijo, corte em formato redondo usando um aro ou um copo de boca larga."
+        ]
+    },
+    "maracujack": {
+        titulo: "Maracujack",
+        imagem: "images/maracujack.PNG",
+        tempo: "10 minutos",
+        rendimento: "1 copo",
+        dificuldade: "Muito fácil",
+        dica: "Para enfeitar, folhas de hortelã.",
+        ingredientes: [
+            "50 ml Jack Daniel’s",
+            "30 ml de polpa de maracujá",
+            "Refrigerante de limão para completar",
+            "3 colheres de sopa de xaropa de açúcar",
+            "Gelo a gosto"
+        ],
+        preparo: [
+            "Encha o copo com gelo e jogue o Jack Daniel's.",
+            "Coloque a polpa de maracujá e o xarope de açúcar e mexa bem.",
+            "Preencha o restante do copo com refrigerante de limão."
+        ]
+    },
+    "choux": {
+        titulo: "Carolina/Eclair (Choux)",
+        imagem: "images/choux.PNG",
+        tempo: "2 horas",
+        rendimento: "24 unidades",
+        dificuldade: "Difícil",
+        dica: "Para enfeitar, folhas de hortelã.",
+        ingredientes: [
+            "250 g de ovo",
+            "160 ml de leite integral",
+            "160 ml de água filtrada",
+            "160 g de manteiga",
+            "6 g de açúcar refinado",
+            "Sal",
+            "160 g de farinha de trigo"
+        ],
+        preparo: [
+            "Quebre os ovos separadamente e reserve em uma tigela.",
+            "Em uma panela, coloque o leite, a água, a manteiga e 1 pitada de cada de sal e de açúcar. Mantenha no fogo até o leite ferver e a manteiga derreter.",
+            "Quando ferver, acrescente a farinha de trigo de uma vez e mexa com uma colher sem parar até a massa formar uma bola e descolar das paredes da panela.",
+            "Transfira o conteúdo da panela para a tigela de uma batedeira e bata por 1 minuto para esfriar. Quando o vapor desaparecer, desligue a batedeira.",
+            "Bata os ovos ligeiramente. Adicione-os, aos poucos, à massa na tigela, batendo a massa novamente até ela ficar lisa, cremosa e homogênea. O ponto certo é quando, ao levantar o gancho da batedeira, a massa demorar alguns segundos para cair, formando um bico triangular."
+        ]
+    },
+    "torta-maca": {
+        titulo: "Torta de maçã",
+        imagem: "images/torta-maca.PNG",
+        tempo: "1 hora e meia",
+        rendimento: "12 fatias",
+        dificuldade: "Médio",
+        dica: "Para enfeitar, folhas de hortelã.",
+        ingredientes: [
+            "2 maçãs picadas sem casca",
+            "suco de ½ limão siciliano",
+            "1 colher de chá de canela em pó opcional",
+            "2 ovos em temperatura ambiente",
+            "100 gr de açúcar refinado",
+            "100 ml de leite integral em temperatura ambiente",
+            "50 ml de azeite de oliva",
+            "50 gr de amido de milho",
+            "150 gr de farinha de trigo",
+            "1 colher de sopa de fermento em pó",
+            "creme de confeiteiro para rechear",
+            "açúcar de confeiteiro para polvilhar opcional"
+        ],
+        preparo: [
+            "Em uma tigela, coloque as maçãs picadas em pedaços pequenos com o suco de limão. Adicione a canela em pó. Reserve.",
+            "Em outra tigela, quebre 2 ovos, acrescente o açúcar e bata vigorosamente com o fouet por 2 minutos. Adicione o leite, o azeite e a farinha com o amido peneirados. Misture com o fouet e quando a massa estiver bem lisinha incorpore o fermento. Acrescente as maçãs e misture com uma espátula e transfira tudo para a forma untada escolhida.",
+            "Coloque o creme de confeiteiro em um saco de confeiteiro e faça um espiral de creme por cima da massa, começando pelo centro. Se não tiver um saco de confeiteiro pode colocar com uma colher.",
+            "Asse por 35 minutos a 180 ˚C."
+        ]
+    },
+    "strudel": {
+        titulo: "Strudel",
+        imagem: "images/strudel.PNG",
+        tempo: "2 horas",
+        rendimento: "1 strudel",
+        dificuldade: "Difícil",
+        dica: "Pode adicionar uvas passas se desejar.",
+        ingredientes: [
+            "250g de farinha de trigo",
+            "5g de sal",
+            "10g de açúcar refinado",
+            "10g de óleo de soja",
+            "150ml de água em temperatura ambiente",
+            "300g de maçã",
+            "100g de açúcar refinado",
+            "Suco de 1 limão",
+            "50g de nozes", 
+            "50g de chocolate ao leite",
+            "50g de chocolate branco",
+            "Canela em pó a gosto"
+        ],
+        preparo: [
+            "Em uma tigela, coloque as maçãs picadas em pedaços pequenos com o suco de limão. Adicione a canela em pó. Reserve.",
+            "Em outra tigela, quebre 2 ovos, acrescente o açúcar e bata vigorosamente com o fouet por 2 minutos. Adicione o leite, o azeite e a farinha com o amido peneirados. Misture com o fouet e quando a massa estiver bem lisinha incorpore o fermento. Acrescente as maçãs e misture com uma espátula e transfira tudo para a forma untada escolhida.",
+            "Coloque o creme de confeiteiro em um saco de confeiteiro e faça um espiral de creme por cima da massa, começando pelo centro. Se não tiver um saco de confeiteiro pode colocar com uma colher.",
+            "Asse por 35 minutos a 180 ˚C."
         ]
     }
 };

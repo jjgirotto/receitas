@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Conversão de Medidas</title>
+    <title>Conversão de Medidas - Minhas Receitas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,43 +12,112 @@
     <div id="nav-placeholder"></div>
 
     <div class="container mt-5">
-        <h3 class="section-title mb-4">Conversão de Medidas</h3>
+        
+        <div class="card shadow-sm p-4 mb-5" style="border-left: 5px solid var(--marrom-claro);">
+            <h4 class="section-title mb-3">🥛 Calculadora de Leite em Pó</h4>
+            <p class="mb-4">Precisa de leite líquido mas só tem leite em pó? Digite a quantidade pedida na receita para saber como misturar:</p>
+            
+            <div class="row g-3 align-items-end">
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Leite Líquido (ml)</label>
+                    <input type="number" id="inputLeite" class="form-control" placeholder="Ex: 250">
+                </div>
+                <div class="col-md-3">
+                    <button onclick="calcularLeite()" class="btn btn-custom w-100">Calcular</button>
+                </div>
+            </div>
 
-        <div class="row">
+            <div id="resultadoLeite" class="alert alert-success d-none mt-4 mb-0">
+                </div>
+        </div>
+
+        <h3 class="section-title mb-4">Tabelas de Conversão</h3>
+        
+        <div class="alert alert-warning shadow-sm" role="alert">
+            <strong>⚠️ Importante:</strong> Todas as medidas são usadas rasas. Após encher a xícara ou a colher, passe uma faca com lâmina reta para retirar o excesso.
+        </div>
+
+        <div class="row g-4 mb-5">
+            
             <div class="col-md-6">
-                <div class="card shadow-sm p-3 mb-4">
-                    <table class="table table-hover mb-0">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Xícara</th>
-                                <th>ml</th>
-                            </tr>
-                        </thead>
+                <div class="card shadow-sm p-3 h-100">
+                    <h5 class="card-title section-title mb-3">💧 Líquidos e Medidas Básicas</h5>
+                    <table class="table table-hover table-sm mb-0">
                         <tbody>
-                            <tr><td>1 xícara</td><td>240 ml</td></tr>
-                            <tr><td>1/2 xícara</td><td>120 ml</td></tr>
-                            <tr><td>1/4 xícara</td><td>60 ml</td></tr>
+                            <tr><td><strong>1 litro</strong></td><td>4 copos (250ml) ou 5 copos (200ml)</td></tr>
+                            <tr><td><strong>1 copo / 1 xícara</strong></td><td>250ml / 240ml</td></tr>
+                            <tr><td><strong>¾ xícara</strong></td><td>180ml</td></tr>
+                            <tr><td><strong>½ xícara</strong></td><td>120ml</td></tr>
+                            <tr><td><strong>¼ xícara</strong></td><td>60ml</td></tr>
+                            <tr><td><strong>1 colher (sopa)</strong></td><td>15ml (3 colheres de chá)</td></tr>
+                            <tr><td><strong>1 colher (sobremesa)</strong></td><td>10ml</td></tr>
+                            <tr><td><strong>1 colher (chá)</strong></td><td>5ml (2 colheres de café)</td></tr>
+                            <tr><td><strong>1 colher (café)</strong></td><td>2,5ml</td></tr>
+                            <tr><td><strong>1 cálice</strong></td><td>9 colheres (sopa)</td></tr>
                         </tbody>
                     </table>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <div class="card shadow-sm p-3 mb-4">
-                    <table class="table table-hover mb-0">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Colher</th>
-                                <th>ml</th>
-                            </tr>
-                        </thead>
+                <div class="card shadow-sm p-3 h-100">
+                    <h5 class="card-title section-title mb-3">🌾 Farinhas e Amidos (1 xícara)</h5>
+                    <table class="table table-hover table-sm mb-0">
                         <tbody>
-                            <tr><td>1 colher sopa</td><td>15 ml</td></tr>
-                            <tr><td>1 colher chá</td><td>5 ml</td></tr>
+                            <tr><td><strong>Farinha de Trigo</strong></td><td>165g</td></tr>
+                            <tr><td><strong>Amido de Milho / Polvilho</strong></td><td>150g</td></tr>
+                            <tr><td><strong>Farinha de Mandioca</strong></td><td>150g</td></tr>
+                            <tr><td><strong>Fubá</strong></td><td>120g</td></tr>
+                            <tr><td><strong>Farinha de Rosca</strong></td><td>80g</td></tr>
+                            <tr><td><strong>Aveia</strong></td><td>80g</td></tr>
+                        </tbody>
+                    </table>
+                    <small class="text-muted mt-2 d-block">*Trigo fracionado: ¾ xíc. = 124g | ½ xíc. = 82g | ¼ xíc. = 41g</small>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm p-3 h-100">
+                    <h5 class="card-title section-title mb-3">🍫 Doces e Gorduras (1 xícara)</h5>
+                    <table class="table table-hover table-sm mb-0">
+                        <tbody>
+                            <tr><td><strong>Açúcar</strong></td><td>200g (½ = 100g | ¼ = 50g)</td></tr>
+                            <tr><td><strong>Chocolate em Pó</strong></td><td>100g (½ = 50g | ¼ = 25g)</td></tr>
+                            <tr><td><strong>Manteiga / Gordura / Banha</strong></td><td>200g</td></tr>
+                            <tr><td><strong>Azeite ou Óleo</strong></td><td>180ml</td></tr>
+                            <tr><td><strong>Mel</strong></td><td>300g</td></tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm p-3 h-100">
+                    <h5 class="card-title section-title mb-3">🍚 Grãos e Outros (1 xícara)</h5>
+                    <table class="table table-hover table-sm mb-0">
+                        <tbody>
+                            <tr><td><strong>Arroz / Feijão</strong></td><td>200g</td></tr>
+                            <tr><td><strong>Amêndoas / Nozes / Castanhas</strong></td><td>140g</td></tr>
+                            <tr><td><strong>Coco Ralado Fresco</strong></td><td>100g</td></tr>
+                            <tr><td><strong>Coco Ralado Seco</strong></td><td>80g</td></tr>
+                            <tr><td><strong>Queijo Ralado</strong></td><td>80g</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card shadow-sm p-3 caixa-dica text-center" style="background-color: var(--verde-medio); color: white;">
+                    <h5 class="mb-3 fw-bold">🔥 Temperaturas do Forno</h5>
+                    <div class="row text-center">
+                        <div class="col-md-3 border-end"><strong>Brando</strong><br>140º a 150ºC</div>
+                        <div class="col-md-3 border-end"><strong>Regular</strong><br>175º a 190ºC</div>
+                        <div class="col-md-3 border-end"><strong>Quente</strong><br>200º a 230ºC</div>
+                        <div class="col-md-3"><strong>Muito Quente</strong><br>240º a 275ºC</div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -56,5 +125,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/components.js"></script>
+    
+    <script>
+        function calcularLeite() {
+            const inputVal = document.getElementById("inputLeite").value;
+            const liquido = parseFloat(inputVal);
+            const alertBox = document.getElementById("resultadoLeite");
+
+            if (isNaN(liquido) || liquido <= 0) {
+                alertBox.className = "alert alert-danger mt-4 mb-0";
+                alertBox.innerHTML = "❌ Por favor, digite uma quantidade válida de leite líquido.";
+                alertBox.classList.remove("d-none");
+                return;
+            }
+
+            const leiteEmPo = (liquido * 12.5) / 112.5;
+            const agua = (liquido * 100) / 112.5;
+
+            alertBox.className = "alert alert-success mt-4 mb-0";
+            alertBox.innerHTML = `✅ <strong>Para fazer ${liquido}ml de leite:</strong> Misture <strong>${leiteEmPo.toFixed(0)}g</strong> de leite em pó com <strong>${agua.toFixed(0)}ml</strong> de água.`;
+            alertBox.classList.remove("d-none");
+        }
+    </script>
 </body>
 </html>
