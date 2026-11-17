@@ -1,6 +1,7 @@
 const bancoDeReceitas = {
     "media-luna": {
         titulo: "Media Luna",
+        categorias: ["panificacao", "doces"],
         imagem: "images/medialuna.PNG",
         video: "https://www.youtube.com/embed/aRdLOL37V8M",
         tempo: "5 horas",
@@ -35,10 +36,11 @@ const bancoDeReceitas = {
     },
     "bolo-limao": {
         titulo: "Bolo de limão",
+        categorias: ["doces"],
         imagem: "images/bolo-limao.PNG",
         tempo: "15 minutos",
         rendimento: "Forma circular pequena",
-        dificuldade: "Muito Fácil",
+        dificuldade: "Fácil",
         dica: "Para a calda, use 50ml de suco de limão, 50ml de água e 1/4 de xícara de açúcar.",
         ingredientes: [
             "2 ovos",
@@ -61,6 +63,7 @@ const bancoDeReceitas = {
     },
     "brownie": {
         titulo: "Brownie",
+        categorias: ["doces"],
         imagem: "images/brownie.PNG",
         tempo: "25 minutos",
         rendimento: "Forma retangular pequena",
@@ -84,10 +87,11 @@ const bancoDeReceitas = {
     },
     "crumble": {
         titulo: "Crumble de maçã",
+        categorias: ["doces"],
         imagem: "images/crumble.PNG",
         tempo: "25 minutos",
         rendimento: "Forma circular/retangular pequena",
-        dificuldade: "Muito Fácil",
+        dificuldade: "Fácil",
         dica: "Pode ser servido quente, morno ou frio com sorvete de creme e polvilhado com canela.",
         ingredientes: [
             "4 maçãs verdes aproximadamente 800 g",
@@ -111,6 +115,7 @@ const bancoDeReceitas = {
     },
     "creme-confeiteiro": {
         titulo: "Creme de confeiteiro",
+        categorias: ["doces"],
         imagem: "images/creme-confeiteiro.PNG",
         tempo: "30 minutos",
         rendimento: "Uma tigela média",
@@ -137,6 +142,7 @@ const bancoDeReceitas = {
     },
     "esfiha": {
         titulo: "Esfiha árabe",
+        categorias: ["panificacao"],
         imagem: "images/esfiha.PNG",
         tempo: "2 horas",
         rendimento: "24 unidades",
@@ -161,10 +167,11 @@ const bancoDeReceitas = {
     },
     "maracujack": {
         titulo: "Maracujack",
+        categorias: ["bebidas"],
         imagem: "images/maracujack.PNG",
         tempo: "10 minutos",
         rendimento: "1 copo",
-        dificuldade: "Muito fácil",
+        dificuldade: "Fácil",
         dica: "Para enfeitar, folhas de hortelã.",
         ingredientes: [
             "50 ml Jack Daniel’s",
@@ -181,6 +188,7 @@ const bancoDeReceitas = {
     },
     "choux": {
         titulo: "Carolina/Eclair (Choux)",
+        categorias: ["doces"],
         imagem: "images/choux.PNG",
         tempo: "2 horas",
         rendimento: "24 unidades",
@@ -205,6 +213,7 @@ const bancoDeReceitas = {
     },
     "torta-maca": {
         titulo: "Torta de maçã",
+        categorias: ["doces"],
         imagem: "images/torta-maca.PNG",
         tempo: "1 hora e meia",
         rendimento: "12 fatias",
@@ -233,6 +242,7 @@ const bancoDeReceitas = {
     },
     "strudel": {
         titulo: "Strudel",
+        categorias: ["panificacao", "doces"],
         imagem: "images/strudel.PNG",
         tempo: "2 horas",
         rendimento: "1 strudel",
@@ -257,6 +267,179 @@ const bancoDeReceitas = {
             "Em outra tigela, quebre 2 ovos, acrescente o açúcar e bata vigorosamente com o fouet por 2 minutos. Adicione o leite, o azeite e a farinha com o amido peneirados. Misture com o fouet e quando a massa estiver bem lisinha incorpore o fermento. Acrescente as maçãs e misture com uma espátula e transfira tudo para a forma untada escolhida.",
             "Coloque o creme de confeiteiro em um saco de confeiteiro e faça um espiral de creme por cima da massa, começando pelo centro. Se não tiver um saco de confeiteiro pode colocar com uma colher.",
             "Asse por 35 minutos a 180 ˚C."
+        ]
+    },
+
+    "cachaca-basil-smash": {
+        titulo: "Cachaça Basil Smash",
+        categorias: ["bebidas"],
+        imagem: "cachaca-basil.PNG",
+        video: "",
+        tempo: "10 minutos",
+        rendimento: "1 copo",
+        dificuldade: "Fácil",
+        dica: "",
+        ingredientes: [
+            "50 ml de cachaça",
+            "25 ml de suco de limão",
+            "20 ml de xarope de açúcar",
+            "8 folhas de manjericão",
+            "Gelo a gosto"
+        ],
+        preparo: [
+            "Coloque a cachaça, o suco de limão, o xarope de açúcar e as folhas de manjericão em uma coqueteleira.",
+            "Macere os ingredientes.",
+            "Adicione gelo e bata bem.",
+            "Coe em um copo com gelo."
+        ]
+    },
+
+    "ny-sour": {
+        titulo: "NY Sour",
+        categorias: ["bebidas"],
+        imagem: "ny-sour.PNG",
+        video: "",
+        tempo: "15 minutos",
+        rendimento: "1 copo",
+        dificuldade: "Média",
+        dica: "",
+        ingredientes: [
+            "50 ml de whisky",
+            "25 ml de suco de limão",
+            "20 ml de xarope de açúcar",
+            "1 clara de ovo",
+            "20 ml de vinho tinto seco",
+            "Gelo a gosto"
+        ],
+        preparo: [
+            "Coloque o whisky, o suco de limão, o xarope de açúcar e a clara de ovo na coqueteleira.",
+            "Adicione gelo e bata tudo, exceto o vinho.",
+            "Coe em um copo com gelo.",
+            "Finalize adicionando o vinho tinto seco."
+        ]
+    },
+
+    "brazuca-sour": {
+        titulo: "Brazuca Sour",
+        categorias: ["bebidas"],
+        imagem: "brazuca-sour.PNG",
+        video: "",
+        tempo: "15 minutos",
+        rendimento: "1 copo",
+        dificuldade: "Média",
+        dica: "",
+        ingredientes: [
+            "50 ml de cachaça",
+            "25 ml de suco de limão",
+            "20 ml de xarope de açúcar",
+            "60 ml de vinho tinto seco",
+            "Gelo a gosto"
+        ],
+        preparo: [
+            "Coloque a cachaça, o suco de limão e o xarope de açúcar na coqueteleira.",
+            "Adicione gelo e bata bem.",
+            "Coe em um copo com gelo.",
+            "Finalize adicionando o vinho tinto seco."
+        ]
+    },
+
+    "wine-and-liquor": {
+        titulo: "Wine and Liquor",
+        categorias: ["bebidas"],
+        imagem: "vinho-licor.PNG",
+        video: "",
+        tempo: "5 minutos",
+        rendimento: "1 copo",
+        dificuldade: "Fácil",
+        dica: "",
+        ingredientes: [
+            "200 ml de vinho tinto",
+            "50 ml de licor de sua preferência",
+            "50 ml de água com gás"
+        ],
+        preparo: [
+            "Coloque o vinho tinto, o licor e a água com gás em um copo.",
+            "Misture delicadamente."
+        ]
+    },
+
+    "tinto-verano-citrus": {
+        titulo: "Tinto Verano Citrus",
+        categorias: ["bebidas"],
+        imagem: "tinto-verano.PNG",
+        video: "",
+        tempo: "5 minutos",
+        rendimento: "1 copo",
+        dificuldade: "Fácil",
+        dica: "Pode utilizar Sprite, Schweppes Citrus ou outro refrigerante cítrico.",
+        ingredientes: [
+            "150 ml de vinho tinto",
+            "150 ml de refrigerante cítrico"
+        ],
+        preparo: [
+            "Coloque o vinho tinto e o refrigerante cítrico em um copo.",
+            "Misture delicadamente."
+        ]
+    },
+
+    "sour-vinho-branco": {
+        titulo: "Sour de Vinho Branco",
+        categorias: ["bebidas"],
+        imagem: "sour-vinho-branco.PNG",
+        video: "",
+        tempo: "10 minutos",
+        rendimento: "1 copo",
+        dificuldade: "Fácil",
+        dica: "Finalize com uma folha de manjericão.",
+        ingredientes: [
+            "90 ml de vinho branco",
+            "25 ml de xarope de açúcar",
+            "25 ml de suco de limão",
+            "Gelo a gosto",
+            "1 folha de manjericão"
+        ],
+        preparo: [
+            "Coloque o vinho branco, o xarope de açúcar, o suco de limão e o gelo na coqueteleira.",
+            "Bata bem.",
+            "Faça uma dupla coagem em um copo com gelo novo.",
+            "Finalize com uma folha de manjericão."
+        ]
+    },
+
+    "pao-caseiro": {
+        titulo: "Pão caseiro",
+        categorias: ["panificacao"],
+        imagem: "pao-caseiro.PNG",
+        video: "",
+        tempo: "4 horas",
+        rendimento: "2 pães",
+        dificuldade: "Média",
+        dica: "A gordura pode ser manteiga ou óleo. Para a versão recheada, utilize 100 g de presunto, 100 g de queijo e 2 tomates.",
+        ingredientes: [
+            "500 g de farinha de trigo",
+            "8 g de fermento biológico seco",
+            "200 ml de leite",
+            "75 g de ovos",
+            "10 g de açúcar",
+            "9 g de sal",
+            "85 g de manteiga ou óleo",
+            "1 ovo para egg wash",
+            "100 g de presunto (opcional)",
+            "100 g de queijo (opcional)",
+            "2 tomates (opcional)"
+        ],
+        preparo: [
+            "Misture os ingredientes secos.",
+            "Adicione os ovos e o leite aos poucos.",
+            "Acrescente metade da gordura e misture.",
+            "Sove a massa.",
+            "Adicione o restante da gordura e continue sovando.",
+            "Deixe descansar por 30 minutos.",
+            "Abra a massa e modele.",
+            "Se desejar, adicione o recheio de presunto, queijo e tomate.",
+            "Bata 1 ovo com um pouco de leite e pincele a superfície do pão (egg wash).",
+            "Deixe descansar por mais 1 hora.",
+            "Asse por aproximadamente 40 minutos em forno preaquecido entre 160 °C e 180 °C."
         ]
     }
 };
